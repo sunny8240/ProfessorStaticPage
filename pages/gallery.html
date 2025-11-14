@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Professor Aditya Katkar</title>
+    <link rel="icon" href="/assect/personal/favIcon.png">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/gallery.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="/index.html" class="logo">Professor Aditya Katkar</a>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="/index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="research.html" class="nav-link">Research</a></li>
+                    <li><a href="teaching.html" class="nav-link">Teaching</a></li>
+                    <li><a href="courses.html" class="nav-link">Courses</a></li>
+                    <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 style="color: var(--blue-800); margin-bottom: 1rem;">Gallery</h1>
+            <div class="section-divider"></div>
+            <p style="margin-top: 1rem; max-width: 42rem; margin-left: auto; margin-right: auto;">
+                A visual journey through conferences, research, teaching moments, and campus life
+            </p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="conferences">Conferences</button>
+                <button class="filter-btn" data-filter="research">Research</button>
+                <button class="filter-btn" data-filter="teaching">Teaching</button>
+                <button class="filter-btn" data-filter="awards">Awards</button>
+                <button class="filter-btn" data-filter="campus">Campus Life</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section>
+        <div class="container">
+            <div class="gallery-grid">
+
+                <!-- Conferences -->
+                <div class="gallery-item" data-category="conferences" data-title="NeurIPS 2024 Presentation">
+                    <img src="/assect/conference/20230914_50547pmByGPSMapCamera[1].jpg" alt="NeurIPS 2024">
+                    <div class="gallery-overlay">
+                        <span class="gallery-badge">Conferences</span>
+                        <h3 class="gallery-title">Guest Lecture Session – 2023</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="conferences" data-title="NeurIPS 2024 Presentation">
+                    <img src="/assect/conference/IMG-20231026-WA0157[1].jpg" alt="NeurIPS 2024">
+                    <div class="gallery-overlay">
+                        <span class="gallery-badge">Conferences</span>
+                        <h3 class="gallery-title">Faculty Development Program (FDP)</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="conferences" data-title="ICML Conference">
+                    <img src="/assect/conference/IMG-20240113-WA0028[1].jpg" alt="ICML Conference">
+                    <div class="gallery-overlay">
+                        <span class="gallery-badge">Conferences</span>
+                        <h3 class="gallery-title">Invited Talk on Cyber Crimes & Prevention</h3>
+                    </div>
+                </div>
+
+                <!-- Research -->
+                <div class="gallery-item" data-category="research" data-title="AI Research Lab">
+                    <img src="/assect/research/research.png" alt="AI Research Lab">
+                    <div class="gallery-overlay">
+                        <span class="gallery-badge">Research</span>
+                        <h3 class="gallery-title">IJRAR</h3>
+                    </div>
+                </div>
+
+                <!-- Teaching -->
+                <div class="gallery-item" data-category="teaching" data-title="Machine Learning Class">
+                    <img src="/assect/teaching/IMG-20200214-WA0026[1].jpg" alt="Machine Learning Class">
+                    <div class="gallery-overlay">
+                        <span class="gallery-badge">Teaching</span>
+                        <h3 class="gallery-title">Class Session</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="teaching" data-title="Machine Learning Class">
+                    <img src="/assect/teaching/IMG-20200214-WA0025[2].jpg" alt="Machine Learning Class">
+                    <div class="gallery-overlay">
+                        <span class="gallery-badge">Teaching</span>
+                        <h3 class="gallery-title">Class Session</h3>
+                    </div>
+                </div>
+
+                <!-- Awards -->
+                <div class="gallery-item" data-category="awards" data-title="Certificate">
+                    <img src="/assect/awards/20181101_114337[1].jpg" alt="Certificate">
+                    <div class="gallery-overlay">
+                        <span class="gallery-badge">Awards</span>
+                        <h3 class="gallery-title">Certificate</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="awards" data-title="Certificate">
+                    <img src="/assect/awards/20181124_144312[1].jpg" alt="Certificate">
+                    <div class="gallery-overlay">
+                        <span class="gallery-badge">Awards</span>
+                        <h3 class="gallery-title">Certificate</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="awards" data-title="Certificate">
+                    <img src="/assect/awards/image copy 10.png" alt="Certificate">
+                    <div class="gallery-overlay">
+                        <span class="gallery-badge">Awards</span>
+                        <h3 class="gallery-title">Certificate</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="awards" data-title="Certificate">
+                    <img src="/assect/awards/image copy 11.png" alt="Certificate">
+                    <div class="gallery-overlay">
+                        <span class="gallery-badge">Awards</span>
+                        <h3 class="gallery-title">Certificate</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="awards" data-title="Certificate">
+                    <img src="/assect/awards/image copy 12.png" alt="Certificate">
+                    <div class="gallery-overlay">
+                        <span class="gallery-badge">Awards</span>
+                        <h3 class="gallery-title">Certificate</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="awards" data-title="Certificate">
+                    <img src="/assect/awards/image copy 13.png" alt="Certificate">
+                    <div class="gallery-overlay">
+                        <span class="gallery-badge">Awards</span>
+                        <h3 class="gallery-title">Certificate</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="awards" data-title="Certificate">
+                    <img src="/assect/awards/image copy 14.png" alt="Certificate">
+                    <div class="gallery-overlay">
+                        <span class="gallery-badge">Awards</span>
+                        <h3 class="gallery-title">Certificate</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="awards" data-title="Certificate">
+                    <img src="/assect/awards/image copy 15.png" alt="Certificate">
+                    <div class="gallery-overlay">
+                        <span class="gallery-badge">Awards</span>
+                        <h3 class="gallery-title">Certificate</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="awards" data-title="Certificate">
+                    <img src="/assect/awards/image copy 16.png" alt="Certificate">
+                    <div class="gallery-overlay">
+                        <span class="gallery-badge">Awards</span>
+                        <h3 class="gallery-title">Certificate</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="awards" data-title="Certificate">
+                    <img src="/assect/awards/image copy 17.png" alt="Certificate">
+                    <div class="gallery-overlay">
+                        <span class="gallery-badge">Awards</span>
+                        <h3 class="gallery-title">Certificate</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="awards" data-title="Certificate">
+                    <img src="/assect/awards/image copy 2.png" alt="Certificate">
+                    <div class="gallery-overlay">
+                        <span class="gallery-badge">Awards</span>
+                        <h3 class="gallery-title">Certificate</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="awards" data-title="Certificate">
+                    <img src="/assect/awards/image copy 3.png" alt="Certificate">
+                    <div class="gallery-overlay">
+                        <span class="gallery-badge">Awards</span>
+                        <h3 class="gallery-title">Certificate</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="awards" data-title="Certificate">
+                    <img src="/assect/awards/image copy 4.png" alt="Certificate">
+                    <div class="gallery-overlay">
+                        <span class="gallery-badge">Awards</span>
+                        <h3 class="gallery-title">Certificate</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="awards" data-title="Certificate">
+                    <img src="/assect/awards/image copy 5.png" alt="Certificate">
+                    <div class="gallery-overlay">
+                        <span class="gallery-badge">Awards</span>
+                        <h3 class="gallery-title">Certificate</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="awards" data-title="Certificate">
+                    <img src="/assect/awards/image copy 6.png" alt="Certificate">
+                    <div class="gallery-overlay">
+                        <span class="gallery-badge">Awards</span>
+                        <h3 class="gallery-title">Certificate</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="awards" data-title="Certificate">
+                    <img src="/assect/awards/image copy 7.png" alt="Certificate">
+                    <div class="gallery-overlay">
+                        <span class="gallery-badge">Awards</span>
+                        <h3 class="gallery-title">Certificate</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="awards" data-title="Certificate">
+                    <img src="/assect/awards/image copy 8.png" alt="Certificate">
+                    <div class="gallery-overlay">
+                        <span class="gallery-badge">Awards</span>
+                        <h3 class="gallery-title">Certificate</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="awards" data-title="Certificate">
+                    <img src="/assect/awards/image copy 9.png" alt="Certificate">
+                    <div class="gallery-overlay">
+                        <span class="gallery-badge">Awards</span>
+                        <h3 class="gallery-title">Certificate</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="awards" data-title="Certificate">
+                    <img src="/assect/awards/image copy.png" alt="Certificate">
+                    <div class="gallery-overlay">
+                        <span class="gallery-badge">Awards</span>
+                        <h3 class="gallery-title">Certificate</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="awards" data-title="Certificate">
+                    <img src="/assect/awards/image.png" alt="Certificate">
+                    <div class="gallery-overlay">
+                        <span class="gallery-badge">Awards</span>
+                        <h3 class="gallery-title">Certificate</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="awards" data-title="Certificate">
+                    <img src="/assect/awards/image2.png" alt="Certificate">
+                    <div class="gallery-overlay">
+                        <span class="gallery-badge">Awards</span>
+                        <h3 class="gallery-title">Certificate</h3>
+                    </div>
+                </div>
+
+                <!-- Campus -->
+                <div class="gallery-item" data-category="campus" data-title="University Campus">
+                    <img src="/assect/campus/20181124_110519[1].jpg" alt="University Campus">
+                    <div class="gallery-overlay">
+                        <span class="gallery-badge">Campus Life</span>
+                        <h3 class="gallery-title">University Campus</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="campus" data-title="University Campus">
+                    <img src="/assect/campus/WhatsApp_Image_2023-10-26_at_15.29.27[2].jpg" alt="University Campus">
+                    <div class="gallery-overlay">
+                        <span class="gallery-badge">Campus Life</span>
+                        <h3 class="gallery-title">University Campus</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <button id="closeLightbox" class="lightbox-close">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="lightbox-content">
+            <img id="lightboxImg" src="" alt="" class="lightbox-image">
+            <div class="lightbox-info">
+                <span id="lightboxCategory" class="gallery-badge"></span>
+                <h2 id="lightboxTitle" style="color: var(--white); margin-top: 1rem;"></h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p>&copy; 2025 Professor. Aditya Katkar. All rights reserved.</p>
+                    <p class="footer-subtitle">Computer Science Department | Pimpri Chinchwad University</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://scholar.google.co.in/citations?view_op=list_works&hl=en&user=md88NjUAAAAJ&gmla"
+                        class="social-link" target="_blank">
+                        <i class="fas fa-graduation-cap"></i>
+                    </a>
+                    <a href="https://orcid.org/0009-0000-3031-9651" class="social-link" target="_blank">
+                        <i class="fas fa-id-card"></i>
+                    </a>
+                    <a href="https://vidwan.inflibnet.ac.in/profile/536650" class="social-link" target="_blank">
+                        <i class="fas fa-university"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/aditya-katkar-11470018/" class="social-link" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:adityakatkar@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Courses - Professor Aditya Katkar</title>
+  <link rel="icon" href="/assect/personal/favIcon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="/css/courses.css" />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav id="navbar" class="navbar">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="/index.html" class="logo">Professor Aditya Katkar</a>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="/index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="research.html" class="nav-link">Research</a></li>
+          <li><a href="teaching.html" class="nav-link">Teaching</a></li>
+          <li><a href="courses.html" class="nav-link active">Courses</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header class="header">
+    <div class="overlay"></div>
+    <div class="header-content">
+      <h1>Courses</h1>
+      <div class="underline"></div>
+      <p>Courses taught at the university</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <h2 class="section-title">Courses Offered</h2>
+
+      <!-- Filters -->
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="bsc">BSc CS</button>
+        <button class="filter-btn" data-filter="cyber">Cybersecurity</button>
+        <button class="filter-btn" data-filter="mca">MCA</button>
+      </div>
+
+      <!-- Course Grid -->
+      <div class="course-grid">
+
+        <!-- 1. DAA -->
+        <article class="course-card" data-category="bsc cyber">
+          <div class="icon"><i data-lucide="cpu"></i></div>
+          <h3>Design Analysis of Algorithms</h3>
+
+          <p class="objective">
+            <strong>Objective:</strong> To understand algorithm design strategies and analyze time–space complexity.
+          </p>
+
+          <div class="tags">
+            <span>Semester: 3</span>
+            <span>Credits: 2</span>
+            <span>Level: Intermediate</span>
+          </div>
+        </article>
+
+        <!-- 2. DCN -->
+        <article class="course-card" data-category="bsc cyber">
+          <div class="icon"><i data-lucide="network"></i></div>
+          <h3>Data Communication & Networking</h3>
+
+          <p class="objective">
+            <strong>Objective:</strong> To study network protocols, communication models, and data transmission.
+          </p>
+
+          <div class="tags">
+            <span>Semester: 3</span>
+            <span>Credits: 2</span>
+            <span>Level: Intermediate</span>
+          </div>
+        </article>
+
+        <!-- 3. Software Project Management -->
+        <article class="course-card" data-category="bsc">
+          <div class="icon"><i data-lucide="clipboard-list"></i></div>
+          <h3>Software Project Management</h3>
+
+          <p class="objective">
+            <strong>Objective:</strong> To plan, monitor, and manage software development projects effectively.
+          </p>
+
+          <div class="tags">
+            <span>Semester: 4</span>
+            <span>Credits: 3</span>
+            <span>Level: Intermediate</span>
+          </div>
+        </article>
+
+        <!-- 4. STQA -->
+        <article class="course-card" data-category="bsc">
+          <div class="icon"><i data-lucide="check-circle"></i></div>
+          <h3>Software Testing & Quality Assurance</h3>
+
+          <p class="objective">
+            <strong>Objective:</strong> To understand testing strategies & quality standards in software development.
+          </p>
+
+          <div class="tags">
+            <span>Semester: 4</span>
+            <span>Credits: 2</span>
+            <span>Level: Intermediate</span>
+          </div>
+        </article>
+
+        <!-- 5. SEPM -->
+        <article class="course-card" data-category="mca">
+          <div class="icon"><i data-lucide="folder-kanban"></i></div>
+          <h3>Software Engineering & Project Management</h3>
+
+          <p class="objective">
+            <strong>Objective:</strong> To understand the engineering of large-scale software systems.
+          </p>
+
+          <div class="tags">
+            <span>Semester: 1</span>
+            <span>Credits: 2</span>
+            <span>Level: Advanced</span>
+          </div>
+        </article>
+
+        <!-- 6. Tableau BI -->
+        <article class="course-card" data-category="mca">
+          <div class="icon"><i data-lucide="bar-chart"></i></div>
+          <h3>Business Intelligence (Tableau)</h3>
+
+          <p class="objective">
+            <strong>Objective:</strong> To learn data visualization and analytics using Tableau.
+          </p>
+
+          <div class="tags">
+            <span>Semester: 2</span>
+            <span>Credits: 1</span>
+            <span>Level: Beginner</span>
+          </div>
+        </article>
+
+        <!-- 7. Operating System -->
+        <article class="course-card" data-category="bsc">
+          <div class="icon"><i data-lucide="terminal"></i></div>
+          <h3>Operating System Concepts</h3>
+
+          <p class="objective">
+            <strong>Objective:</strong> To understand OS design, processes, threads, memory & file systems.
+          </p>
+
+          <div class="tags">
+            <span>Semester: 2</span>
+            <span>Credits: 1</span>
+            <span>Level: Intermediate</span>
+          </div>
+        </article>
+
+        <!-- 8. Cyber Security -->
+        <article class="course-card" data-category="cyber bsc">
+          <div class="icon"><i data-lucide="shield"></i></div>
+          <h3>Cyber Security</h3>
+
+          <p class="objective">
+            <strong>Objective:</strong> To learn security principles, attacks, defenses, and secure communication.
+          </p>
+
+          <div class="tags">
+            <span>Semester: 3</span>
+            <span>Credits: 1</span>
+            <span>Level: Intermediate</span>
+          </div>
+        </article>
+
+        <!-- 9. Blockchain -->
+        <article class="course-card" data-category="cyber">
+          <div class="icon"><i data-lucide="cube"></i></div>
+          <h3>Blockchain Technology</h3>
+
+          <p class="objective">
+            <strong>Objective:</strong> To explore blockchain fundamentals including cryptography and distributed
+            ledgers.
+          </p>
+
+          <div class="tags">
+            <span>Semester: 5</span>
+            <span>Credits: 1</span>
+            <span>Level: Advanced</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+
+
+  <script src="/js/main.js">
+
+  </script>
+  <script>
+    const filterBtns = document.querySelectorAll(".filter-btn");
+    const cards = document.querySelectorAll(".course-card");
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener("click", () => {
+        filterBtns.forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+
+        const filter = btn.dataset.filter;
+
+        cards.forEach(card => {
+          card.style.display =
+            filter === "all" || card.dataset.category.includes(filter)
+              ? "block"
+              : "none";
+        });
+      });
+    });
+
+  </script>
+</body>
+
+</html>

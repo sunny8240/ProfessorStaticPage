@@ -1,0 +1,371 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  background-color: #fdfdfd;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Background Pattern */
+.background-pattern {
+  opacity: 0.05;
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+}
+
+/* Header */
+.research-header {
+  margin-top: 60px;
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #e8f1ff, #ffffff);
+}
+
+.research-header h1 {
+  font-size: 2.5rem;
+  color: #083b8a;
+}
+
+.research-header .divider {
+  width: 80px;
+  height: 4px;
+  background: #083b8a;
+  margin: 15px auto;
+  border-radius: 2px;
+}
+
+.research-header p {
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Research Areas */
+.research-areas .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.research-areas {
+  background: #f8f9fc;
+  padding: 80px 0;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.research-areas h2 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #111;
+  letter-spacing: 1px;
+}
+
+/* .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+} */
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 40px 25px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+}
+
+.icon {
+  font-size: 45px;
+  color: #2e73ff;
+  margin-bottom: 20px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover .icon {
+  color: #004aad;
+  transform: scale(1.1);
+}
+
+.card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card .icon {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+/* Tabs Section */
+.tabs-section {
+  background: linear-gradient(135deg, #e8f1ff, #ffffff);
+  padding: 80px 0;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.tab-button {
+  padding: 10px 25px;
+  border: none;
+  background: #ddd;
+  color: #333;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.tab-button.active {
+  background: #083b8a;
+  color: white;
+}
+
+.tab-button:hover {
+  background: #0b4eb8;
+  color: white;
+}
+
+.tab-content {
+  display: none;
+  animation: fadeIn 0.4s ease;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Publications */
+.publication-card {
+  background: white;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+}
+
+.publication-card:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.publication-card {
+  border-left: 4px solid #2563eb;
+}
+
+.pub-info {
+  flex: 1;
+}
+
+.pub-info h3 {
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.authors,
+.venue {
+  color: #666;
+}
+
+.badge {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  margin-right: 5px;
+}
+
+.badge.blue {
+  background: #e0ecff;
+  color: #0848a0;
+}
+
+.badge.green {
+  background: #e0f8e9;
+  color: #0b8a3b;
+}
+
+.badge.amber {
+  background: #fff6db;
+  color: #946200;
+}
+
+/* ===== AVAILABLE ON REQUEST BUTTON ===== */
+.btn-secondary.disabled {
+  padding: 10px 20px;
+  background: rgba(120, 120, 120, 0.12);
+  color: #555;
+  border: 1px solid rgba(120, 120, 120, 0.3);
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: not-allowed;
+  backdrop-filter: blur(4px);
+  transition: all 0.3s ease;
+}
+
+.btn-secondary.disabled:hover {
+  background: rgba(120, 120, 120, 0.18);
+  box-shadow: 0 0 10px rgba(150, 150, 150, 0.3);
+}
+
+.btn-primary,
+.btn-outline {
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  transition: 0.3s;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.btn-primary {
+  background: #083b8a;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #0b4eb8;
+}
+
+.btn-outline {
+  border: 2px solid #083b8a;
+  color: #083b8a;
+}
+
+.btn-outline:hover {
+  background: #e8f1ff;
+}
+
+/* Projects */
+.project-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 25px;
+  background: white;
+  border-radius: 10px;
+  border-left: 5px solid #083b8a;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+}
+
+.icon-box {
+  background: #e0ecff;
+  color: #083b8a;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+}
+
+.project-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.meta span {
+  margin-right: 20px;
+  color: #555;
+}
+
+/* CTA Section */
+.cta {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.cta-card {
+  background: linear-gradient(to right, #083b8a, #0b4eb8);
+  color: white;
+  padding: 60px 30px;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cta-card h2 {
+  margin-bottom: 15px;
+}
+
+.cta-card p {
+  color: #d9e6ff;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  background: white;
+  color: #083b8a;
+  text-decoration: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.cta-button:hover {
+  background: #f4f8ff;
+}
