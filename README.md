@@ -185,7 +185,11 @@ pro/
 3. **Access the site:**
    - Open browser and navigate to `http://localhost:8000`
 
----Future Work -->
+## Admin / Upload Functionality
+
+The optional admin/upload functionality has been removed from this repository. There is no active admin UI or upload API in this copy of the site. If you previously used `pages/admin_upload.html` or the `upload_server/` service, those components have been neutralized or disabled.
+
+If you want the admin/upload features restored later, I can re-add a secure implementation (server-side protected admin UI and uploads to object storage).
 
 ## 📋 File Descriptions
 

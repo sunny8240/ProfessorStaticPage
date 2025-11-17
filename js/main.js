@@ -45,6 +45,8 @@ navLinks.forEach((link) => {
   }
 });
 
+// admin links removed — admin/upload functionality deleted
+
 // Smooth Scroll for Anchor Links
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
