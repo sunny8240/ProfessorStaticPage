@@ -1,5 +1,4 @@
-// Mobile Menu Toggle
-const mobileMenuToggle = document.getElementById("mobileMenuToggle");
+ const mobileMenuToggle = document.getElementById("mobileMenuToggle");
 const navMenu = document.getElementById("navMenu");
 
 if (mobileMenuToggle) {
@@ -16,7 +15,7 @@ if (mobileMenuToggle) {
   });
 }
 
-// Navbar Scroll Effect
+ 
 const navbar = document.getElementById("navbar");
 let lastScrollTop = 0;
 
@@ -32,7 +31,7 @@ window.addEventListener("scroll", () => {
   lastScrollTop = scrollTop;
 });
 
-// Active Navigation Link
+ 
 const currentPage = window.location.pathname.split("/").pop() || "index.html";
 const navLinks = document.querySelectorAll(".nav-link");
 
@@ -45,9 +44,6 @@ navLinks.forEach((link) => {
   }
 });
 
-// admin links removed — admin/upload functionality deleted
-
-// Smooth Scroll for Anchor Links
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
@@ -61,9 +57,9 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-// Form Validation and Submission (for contact page)
+ 
 const contactForm = document.getElementById("contactForm");
-if (contactForm) {
+if (contactForm && contactForm.dataset.advancedHandling !== "true") {
   contactForm.addEventListener("submit", (e) => {
     e.preventDefault();
 
@@ -81,7 +77,7 @@ if (contactForm) {
   });
 }
 
-// Toast Notification
+ 
 function showToast(message, type = "success") {
   const toast = document.createElement("div");
   toast.className = `toast toast-${type}`;
@@ -101,7 +97,7 @@ function showToast(message, type = "success") {
   }, 3000);
 }
 
-// Gallery Filter (for gallery page)
+ 
 const filterButtons = document.querySelectorAll(".filter-btn");
 const galleryItems = document.querySelectorAll(".gallery-item");
 
@@ -115,58 +111,60 @@ filterButtons.forEach((button) => {
     galleryItems.forEach((item) => {
       const category = item.getAttribute("data-category");
       if (filter === "all" || category === filter) {
-        item.style.display = "block";
-        setTimeout(() => {
-          item.style.opacity = "1";
-          item.style.transform = "scale(1)";
-        }, 10);
+        item.classList.remove("hidden");
+        item.classList.add("visible");
       } else {
-        item.style.opacity = "0";
-        item.style.transform = "scale(0.8)";
-        setTimeout(() => {
-          item.style.display = "none";
-        }, 300);
+        item.classList.remove("visible");
+        item.classList.add("hidden");
       }
     });
   });
 });
 
-// Gallery Lightbox
-const galleryImages = document.querySelectorAll(".gallery-item img");
-const lightbox = document.getElementById("lightbox");
+ 
+const galleryItemImages = document.querySelectorAll(".gallery-item img");
+const lightbox = document.createElement("div");
+lightbox.id = "lightbox";
+lightbox.style.display = "none";
+lightbox.style.position = "fixed";
+lightbox.style.top = "0";
+lightbox.style.left = "0";
+lightbox.style.width = "100%";
+lightbox.style.height = "100%";
+lightbox.style.background = "rgba(0, 0, 0, 0.9)";
+lightbox.style.zIndex = "1000";
+lightbox.style.justifyContent = "center";
+lightbox.style.alignItems = "center";
+lightbox.innerHTML = `
+  <img id="lightboxImg" style="max-width: 90%; max-height: 80%; border-radius: 0.5rem;" />
+  <button id="closeLightbox" style="position: absolute; top: 1rem; right: 1rem; background: rgba(255, 255, 255, 0.1); border: 2px solid white; color: white; font-size: 2rem; cursor: pointer; border-radius: 50%; width: 3rem; height: 3rem; display: flex; align-items: center; justify-content: center;">&times;</button>
+`;
+document.body.appendChild(lightbox);
+
 const lightboxImg = document.getElementById("lightboxImg");
-const lightboxTitle = document.getElementById("lightboxTitle");
-const lightboxCategory = document.getElementById("lightboxCategory");
 const closeLightbox = document.getElementById("closeLightbox");
 
-galleryImages.forEach((img) => {
+galleryItemImages.forEach((img) => {
   img.addEventListener("click", () => {
-    const item = img.closest(".gallery-item");
     lightboxImg.src = img.src;
-    lightboxTitle.textContent = item.getAttribute("data-title");
-    lightboxCategory.textContent = item.getAttribute("data-category");
     lightbox.style.display = "flex";
     document.body.style.overflow = "hidden";
   });
 });
 
-if (closeLightbox) {
-  closeLightbox.addEventListener("click", () => {
+closeLightbox.addEventListener("click", () => {
+  lightbox.style.display = "none";
+  document.body.style.overflow = "auto";
+});
+
+lightbox.addEventListener("click", (e) => {
+  if (e.target === lightbox) {
     lightbox.style.display = "none";
     document.body.style.overflow = "auto";
-  });
-}
+  }
+});
 
-if (lightbox) {
-  lightbox.addEventListener("click", (e) => {
-    if (e.target === lightbox) {
-      lightbox.style.display = "none";
-      document.body.style.overflow = "auto";
-    }
-  });
-}
-
-// Accordion (for courses page)
+ 
 const accordionHeaders = document.querySelectorAll(".accordion-header");
 
 accordionHeaders.forEach((header) => {
@@ -187,7 +185,7 @@ accordionHeaders.forEach((header) => {
   });
 });
 
-// Tabs (for research page)
+ 
 const tabButtons = document.querySelectorAll(".tab-button");
 const tabContents = document.querySelectorAll(".tab-content");
 
@@ -208,7 +206,7 @@ tabButtons.forEach((button) => {
   });
 });
 
-// Animation on Scroll
+ 
 const observerOptions = {
   threshold: 0.1,
   rootMargin: "0px 0px -50px 0px",
@@ -226,64 +224,4 @@ document.querySelectorAll(".animate-on-scroll").forEach((el) => {
   observer.observe(el);
 });
 
-// Counter Animation for Stats this all for testing purposes
-// const counters = document.querySelectorAll('.stat-number');
-// const speed = 200;
 
-// counters.forEach(counter => {
-//     const updateCount = () => {
-//         const target = counter.getAttribute('data-target');
-//         const count = +counter.innerText.replace(/\D/g, '');
-//         const inc = target / speed;
-
-//         if (count < target) {
-//             counter.innerText = Math.ceil(count + inc) + (counter.innerText.includes('+') ? '+' : '');
-//             setTimeout(updateCount, 1);
-//         } else {
-//             counter.innerText = target + (counter.innerText.includes('+') ? '+' : '');
-//         }
-//     };
-
-//     const counterObserver = new IntersectionObserver((entries) => {
-//         entries.forEach(entry => {
-//             if (entry.isIntersecting && !counter.classList.contains('counted')) {
-//                 counter.classList.add('counted');
-//                 updateCount();
-//             }
-//         });
-//     }, { threshold: 0.5 });
-
-//     counterObserver.observe(counter);
-// });
-
-// Another but batter than previous
-// const counters = document.querySelectorAll('.stat-number');
-// const speed = 200;
-
-// counters.forEach(counter => {
-//     const target = +counter.getAttribute('data-target');
-//     if (!target) return;
-
-//     const updateCount = () => {
-//         const count = +counter.innerText.replace(/\D/g, '');
-//         const inc = target / speed;
-
-//         if (count < target) {
-//             counter.innerText = Math.ceil(count + inc) + '+';
-//             setTimeout(updateCount, 10);
-//         } else {
-//             counter.innerText = target + '+';
-//         }
-//     };
-
-//     const counterObserver = new IntersectionObserver((entries) => {
-//         entries.forEach(entry => {
-//             if (entry.isIntersecting && !counter.classList.contains('counted')) {
-//                 counter.classList.add('counted');
-//                 updateCount();
-//             }
-//         });
-//     }, { threshold: 0.5 });
-
-//     counterObserver.observe(counter);
-// });

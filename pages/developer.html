@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developer - Sunny Sharma</title>
+  <link rel="icon" href="/assect/personal/favIcon.png">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    /* Updated styles for responsiveness and alignment */
+    .developer-section {
+      background: linear-gradient(135deg, #f0f4ff 0%, #ffffff 100%);
+      padding: 3rem 1rem;
+      margin-top: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    }
+    .developer-card {
+      background: #fff;
+      border-radius: 1rem;
+      padding: 2rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .developer-header {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .developer-title {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #1e3a8a;
+      margin-bottom: 0.5rem;
+    }
+    .developer-role {
+      font-size: 1.2rem;
+      color: #2563eb;
+      font-weight: 500;
+    }
+    .developer-description {
+      font-size: 1.1rem;
+      color: #374151;
+      margin-bottom: 1.5rem;
+      line-height: 1.8;
+    }
+    .developer-skills ul,
+    .developer-purpose ul,
+    .developer-contact ul {
+      margin: 0.5rem 0 1.5rem 1.5rem;
+      color: #374151;
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+    .developer-skills ul {
+      columns: 2;
+      column-gap: 2rem;
+    }
+    .developer-contact a {
+      color: #2563eb;
+      text-decoration: none;
+      word-break: break-word;
+      transition: color 0.3s;
+    }
+    .developer-contact a:hover {
+      color: #1e3a8a;
+    }
+    .developer-social {
+      margin-top: 1.5rem;
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .developer-social a {
+      color: #2563eb;
+      font-size: 1.5rem;
+      transition: color 0.3s;
+    }
+    .developer-social a:hover {
+      color: #1e3a8a;
+    }
+    @media (max-width: 768px) {
+      .developer-card {
+        padding: 1.5rem;
+      }
+      .developer-header {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+      }
+      .developer-skills ul {
+        columns: 1;
+      }
+    }
+    @media (max-width: 480px) {
+      .developer-title {
+        font-size: 1.8rem;
+      }
+      .developer-role {
+        font-size: 1rem;
+      }
+      .developer-description {
+        font-size: 1rem;
+      }
+      .developer-social {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="developer-section">
+    <div style="text-align:center; margin-bottom:2rem;">
+      <a href="/index.html" class="btn btn-primary" style="display:inline-flex;align-items:center;gap:0.5rem;padding:0.7rem 1.5rem;border-radius:9999px;background:#2563eb;color:#fff;text-decoration:none;font-weight:600;transition:background 0.3s;box-shadow:0 2px 8px rgba(30,58,138,0.08);">
+        <i class="fas fa-arrow-left"></i> Back to Home
+      </a>
+    </div>
+    <div class="developer-card">
+      <div class="developer-header">
+        <div>
+          <div class="developer-title">Sunny Sharma</div>
+          <div class="developer-role">Full Stack Developer (MERN) & Cybersecurity Enthusiast</div>
+        </div>
+      </div>
+      <div class="developer-description">
+        <p>Hi 👋 I’m Sunny Sharma — a Cybersecurity-focused Full Stack Developer and a B.Sc. Cybersecurity student. I build modern, secure, and scalable web applications using the MERN stack, Python, and cloud technologies. I also study penetration testing and application security to make the software I build more resilient.</p>
+        <p>I enjoy creating real-world projects, exploring web exploitation, and building UI/UX-rich applications that feel fast, smooth, and professional. My work combines development and security: I not only build applications, I also understand how to secure them.</p>
+        <p><strong>What I do:</strong></p>
+        <ul>
+          <li>Full Stack Development (MERN + Python) — clean architecture and secure coding</li>
+          <li>Cybersecurity & Penetration Testing — web exploitation, vulnerability testing, CTF practice</li>
+          <li>UI/UX & Frontend Engineering — responsive layouts, animations, modern interfaces</li>
+          <li>Python scripting & automation — data handling, scraping, and backend tooling</li>
+        </ul>
+      </div>
+      <div class="developer-skills">
+        <strong>Skills & Experience:</strong>
+        <ul>
+          <li>Full Stack Development (MongoDB, Express.js, React, Node.js)</li>
+          <li>Frontend Engineering, UI/UX Design & Responsive Layouts</li>
+          <li>API Development, JWT Authentication & Secure Backend Architecture</li>
+          <li>Cybersecurity, Penetration Testing & Application Security</li>
+          <li>Docker, Kubernetes, CI/CD, NoSQL/SQL Databases</li>
+          <li>Encryption, Secure API Design & Web Exploitation Concepts</li>
+        </ul>
+      </div>
+      <div class="developer-purpose">
+        <strong>Purpose of Development:</strong>
+        <ul>
+          <li>Deliver a clean, modern, and visually professional academic website</li>
+          <li>Organize research work, publications, and activities</li>
+          <li>Provide a responsive, secure, and user-friendly platform for students, faculty, and researchers</li>
+        </ul>
+      </div>
+      <div class="developer-contact">
+        <strong>Contact the Developer:</strong>
+        <ul>
+          <li>Email: <a href="mailto:sunny.sharma24@pcu.edu.in">sunny.sharma24@pcu.edu.in</a></li>
+          <li>WhatsApp: <a href="https://wa.me/918767608240">+91 8767608240</a></li>
+          <li>LinkedIn: <a href="https://www.linkedin.com/in/sunny-sharma-4b75a6325" target="_blank">Sunny Sharma</a></li>
+          <li>GitHub: <a href="https://github.com/sunny8240" target="_blank">sunny8240</a></li>
+        </ul>
+        <div class="developer-social">
+          <a href="mailto:sunny.sharma24@pcu.edu.in" title="Email" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://wa.me/918767608240" title="WhatsApp" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://www.linkedin.com/in/sunny-sharma-4b75a6325" title="LinkedIn" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/sunny8240" title="GitHub" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+        
+        
+      </div>
+    </div>
+  </section>
+  <footer class="footer" style="margin-top: 2rem;">
+    <div class="container" style="text-align: center;">
+      <a href="/pages/developer.html" style="color: #1e3a8a; text-decoration: none; font-size: 1.3rem; margin-right: 0.5rem;">
+        <i class="fas fa-user-astronaut"></i> Developer
+      </a>
+      <p style="margin-top: 1rem; color: #374151;">&copy; 2025 Sunny Sharma. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

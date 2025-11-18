@@ -1,4 +1,4 @@
-/* === Base reset & typography === */
+ 
 :root {
   --blue-800: #083b8a;
   --blue-600: #0b4eb8;
@@ -28,19 +28,19 @@ body {
   line-height: 1.5;
 }
 
-/* background pattern */
+ 
 .background-pattern {
   position: fixed;
   inset: 0;
   z-index: -2;
-  /* background-image: url('professor.jpg'); */
+  
   background-repeat: repeat;
   background-size: 200px 200px;
   opacity: 0.06;
   filter: grayscale(20%) contrast(0.95) saturate(0.7);
 }
 
-/* soft light-blue overlay for entire page */
+ 
 .background-pattern::after {
   content: "";
   position: absolute;
@@ -49,13 +49,13 @@ body {
   pointer-events: none;
 }
 
-/* page container */
+ 
 .page {
   position: relative;
   z-index: 0
 }
 
-/* === Header === */
+ 
 .header {
   margin-top: 60px;
   padding: 5.25rem 1rem 3.5rem;
@@ -91,7 +91,7 @@ body {
   font-size: 1.05rem
 }
 
-/* === Sections === */
+ 
 .section {
   padding: 3.25rem 1rem;
   max-width: 1100px;
@@ -105,7 +105,7 @@ body {
   margin-bottom: 1.25rem
 }
 
-/* narrow card (philosophy) */
+ 
 .narrow {
   max-width: 900px
 }
@@ -123,19 +123,19 @@ body {
   box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
 }
 
-/* philosophy card (bigger) */
+ 
 .philosophy {
   padding: 2rem 2.25rem;
   background: linear-gradient(90deg, #f0f7ff, #ffffff)
 }
 
-/* muted paragraph */
+ 
 .muted {
   color: var(--muted);
   margin-top: 0.5rem
 }
 
-/* badges */
+ 
 .badge {
   display: inline-block;
   padding: 6px 10px;
@@ -156,7 +156,7 @@ body {
   font-size: .78rem
 }
 
-/* === Grid utilities === */
+ 
 .grid {
   display: grid;
   gap: 1rem;
@@ -170,7 +170,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
 }
 
-/* card types */
+ 
 .subject-card {
   display: flex;
   gap: 1rem;
@@ -195,7 +195,7 @@ body {
   height: 26px
 }
 
-/* subject body */
+ 
 .subject-head {
   display: flex;
   align-items: center;
@@ -236,7 +236,7 @@ body {
   opacity: 0.9
 }
 
-/* === Course cards === */
+ 
 .course-card {
   display: flex;
   flex-direction: column;
@@ -284,13 +284,13 @@ body {
   height: 18px
 }
 
-/* small green badge for current */
+ 
 .badge.small.green {
   background: #e7f9ee;
   color: #0b6b2e
 }
 
-/* student resource center cards */
+ 
 .center-card {
   text-align: center;
   padding: 1.5rem
@@ -301,17 +301,17 @@ body {
   margin-bottom: 0.75rem
 }
 
-/* subtle background section */
+ 
 .light {
   background: linear-gradient(180deg, #f8fbff, #ffffff)
 }
 
-/* spacing helpers */
+ 
 .section+.section {
   margin-top: 0.5rem
 }
 
-/* === Responsive === */
+ 
 @media (max-width: 992px) {
   .grid-2 {
     grid-template-columns: repeat(1, 1fr)
@@ -346,54 +346,97 @@ a:focus {
   border-radius: 6px
 }
 
-/* Grid container for subjects */
+ 
 .grid {
   display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   margin-top: 2rem;
 }
 
-/* Individual subject cards */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    padding: 1rem;
+  }
+  .subject-card {
+    padding: 1rem;
+  }
+}
+
+ 
 .subject-card {
   background: #ffffff;
-  border-radius: 12px;
-  border: 1px solid #e2e8f0;
-  padding: 1.8rem 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid #e5e7eb;
+  padding: 2rem 1.75rem;
   display: flex;
   flex-direction: column;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .subject-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+  border-color: #083b8a;
 }
 
 /* Icon box */
 .subject-card .icon-box {
-  font-size: 2.2rem;
-  color: #2563eb;
-  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  color: #083b8a;
+  margin-bottom: 1.2rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #e0ecff 0%, #e8f1ff 100%);
+  border-radius: 12px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.subject-card:hover .icon-box {
+  transform: scale(1.15);
+  background: linear-gradient(135deg, #2563eb 0%, #083b8a 100%);
+  color: white;
 }
 
 /* Subject Head */
 .subject-card .subject-head {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 0.8rem;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.subject-card .subject-head h3 {
+  flex: 1;
+  margin: 0;
+  font-size: 1.2rem;
+  color: #111827;
+  font-weight: 700;
+  line-height: 1.4;
 }
 
 .subject-card .badge {
-  background: #2563eb;
+  background: linear-gradient(135deg, #083b8a 0%, #0b4eb8 100%);
   color: #fff;
-  padding: 0.2rem 0.7rem;
+  padding: 0.35rem 0.9rem;
   border-radius: 6px;
   font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
+  box-shadow: 0 2px 6px rgba(8, 59, 138, 0.15);
 }
 
 /* Description text */
@@ -411,21 +454,26 @@ a:focus {
 }
 
 .subject-card .pill {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
-  background: #f0f4f8;
-  padding: 0.4rem 0.8rem;
-  border-radius: 6px;
+  gap: 0.5rem;
+  background: #f0f7ff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
   text-decoration: none;
   font-size: 0.85rem;
-  color: #1e40af;
-  transition: background 0.3s ease;
+  color: #083b8a;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 1px solid #d0e0f5;
 }
 
 .subject-card .pill:hover {
-  background: #2563eb;
+  background: linear-gradient(135deg, #083b8a 0%, #0b4eb8 100%);
   color: #fff;
+  border-color: transparent;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(8, 59, 138, 0.2);
 }
 
 .student-resources {

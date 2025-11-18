@@ -1,12 +1,10 @@
-//This file contains the data of courses offered in the Computer Science department.
-//But this is sample data.
-//I did not use this data in the final project.
+ 
 const currentCourses = [
   {
     code: "CS 5101",
     name: "Design & Analysis of Algorithms",
     semester: "Fall 2024",
-    credits: 2,
+    credits: 3,
     description:
       "Study of algorithmic techniques including divide-and-conquer, greedy methods, dynamic programming, and computational complexity.",
     objectives: [
@@ -40,7 +38,7 @@ const currentCourses = [
     code: "CS 5201",
     name: "Data Communication & Networking",
     semester: "Fall 2024",
-    credits: 4,
+    credits: 3,
     description:
       "Covers networking fundamentals, OSI model, TCP/IP protocols, routing, switching, and data transmission techniques.",
     objectives: [
@@ -70,7 +68,7 @@ const currentCourses = [
     code: "CS 5301",
     name: "Software Project Management",
     semester: "Fall 2024",
-    credits: 4,
+    credits: 3,
     description:
       "Principles of planning, scheduling, budgeting, risk management, and quality control in software project development.",
     objectives: [
@@ -97,7 +95,7 @@ const currentCourses = [
     code: "CS 5402",
     name: "Software Testing & Quality Assurance",
     semester: "Fall 2024",
-    credits: 4,
+    credits: 3,
     description:
       "Explores manual and automated testing, test case development, debugging, QA frameworks, and industry best practices.",
     objectives: [
@@ -121,7 +119,7 @@ const currentCourses = [
     code: "CS 5403",
     name: "Software Engineering & Project Management",
     semester: "Fall 2024",
-    credits: 4,
+    credits: 3,
     description:
       "Combination of SDLC, requirements engineering, system design, and project management concepts.",
     objectives: [
@@ -144,7 +142,7 @@ const currentCourses = [
     code: "CS 5501",
     name: "Business Intelligence using Tableau",
     semester: "Fall 2024",
-    credits: 3,
+    credits: 1,
     description:
       "Learn visualization, dashboards, storytelling with data, and business analytics using Tableau.",
     objectives: [
@@ -167,7 +165,7 @@ const currentCourses = [
     code: "CS 5601",
     name: "Operating System Concepts",
     semester: "Fall 2024",
-    credits: 4,
+    credits: 3,
     description:
       "Learn OS fundamentals including processes, threads, memory management, file systems, and CPU scheduling.",
     objectives: [
@@ -190,7 +188,7 @@ const currentCourses = [
     code: "CS 5701",
     name: "Cyber Security",
     semester: "Fall 2024",
-    credits: 4,
+    credits: 3,
     description:
       "Foundations of cybersecurity including threats, vulnerabilities, cryptography, network protection, and incident response.",
     objectives: [

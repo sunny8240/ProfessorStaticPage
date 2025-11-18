@@ -493,6 +493,20 @@ p {
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+    body {
+        font-size: 90%;
+    }
+
+    header {
+        padding: 1rem;
+    }
+
+    .container {
+        padding: 0 1rem;
+    }
+}
+
 @media (max-width: 768px) {
     .mobile-menu-toggle {
         display: block;
@@ -538,6 +552,21 @@ p {
     .stats-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .developer-card {
+        padding: 1rem;
+    }
+
+    .developer-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .developer-skills ul,
+    .developer-purpose ul,
+    .developer-contact ul {
+        padding-left: 1rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -553,5 +582,17 @@ p {
     .btn {
         width: 100%;
         justify-content: center;
+    }
+
+    .developer-card {
+        padding: 0.5rem;
+    }
+
+    .developer-header {
+        text-align: center;
+    }
+
+    .developer-social a {
+        font-size: 1rem;
     }
 }

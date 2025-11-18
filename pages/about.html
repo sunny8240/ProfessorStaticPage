@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="/css/styles.css" />
   <link rel="stylesheet" href="/css/about.css" />
+  
+  
 </head>
 
 <body>
@@ -33,6 +35,8 @@
       </div>
     </div>
   </nav>
+  <!-- ...existing code... -->
+
   <!-- Header -->
   <section class="header">
     <h1>About Me</h1>
@@ -44,46 +48,34 @@
   <section class="bio-section">
     <div class="bio-container">
       <div class="bio-top">
-        <img src="/assect/personal/sirImg.jpg" alt="Professor Aditya Katkar" class="bio-image" />
+        <div class="bio-image-wrapper">
+          <img src="/assect/personal/sirImg.jpg" alt="Professor Aditya Katkar" class="bio-image" />
+        </div>
         <div class="bio-intro">
           <h2>Biography</h2>
-          <p>Professor Aditya Katkar is a dedicated and passionate academic professional with over 16 years of
-            experience
-            in teaching, research, and academic administration. He has consistently contributed to the growth of higher
-            education by fostering student success, developing innovative teaching methodologies, and supporting
-            institutional objectives through collaborative initiatives.</p>
+          <p><strong>Professor Aditya Katkar</strong> is a dedicated academic professional with over <strong>16 years</strong> of experience in teaching, research, and academic administration. He is known for fostering student success, developing innovative teaching methodologies, and supporting institutional objectives through collaborative initiatives.</p>
+          <ul class="bio-list">
+            <li>Active in curriculum design, course development, and academic policy implementation.</li>
+            <li>Deeply committed to student mentorship and guidance.</li>
+            <li>Contributed to various committees and academic administration.</li>
+            <li>Engaged in practice-oriented research to improve teaching-learning outcomes.</li>
+            <li>Upholds professional integrity and a student-centered approach.</li>
+          </ul>
         </div>
       </div>
-
-      <div class="bio-content">
-        <p>Professor Katkar has played an active role in curriculum design, course development, and academic policy
-          implementation, ensuring that educational programs remain relevant to current academic and industry
-          standards...</p>
-
-        <p>In addition to his teaching responsibilities, Professor Katkar is deeply committed to student mentorship and
-          guidance...</p>
-
-        <p>As part of his academic administration and institutional service, Professor Katkar has contributed to various
-          committees...</p>
-
-        <p>In the field of research, Professor Katkar has engaged in practice-oriented studies aimed at improving
-          teaching-learning outcomes...</p>
-
-        <p>Through his unwavering dedication, professional integrity, and student-centered approach, Professor Aditya
-          Katkar continues to make a lasting impact in the field of higher education.</p>
-      </div>
       <div class="quick-icons">
-        <div><i data-lucide="graduation-cap" class="icon"></i> Assistant Professor, PCU Pune</div>
-        <div><i data-lucide="briefcase" class="icon"></i> 16+ Years Teaching Experience</div>
-        <div><i data-lucide="book-open" class="icon"></i> Ph.D. (Pursuing), SPPU Pune</div>
+        <div><i data-lucide="graduation-cap" class="icon"></i> <span>Assistant Professor, PCU Pune</span></div>
+        <div><i data-lucide="briefcase" class="icon"></i> <span>16+ Years Teaching Experience</span></div>
+        <div><i data-lucide="book-open" class="icon"></i> <span>Ph.D. (Pursuing), SPPU Pune</span></div>
       </div>
       <div class="about-cv">
         <a href="/assect/pdfs/Aditya_Resume.pdf" download class="cv-btn">
-          <i data-lucide="download"></i> Download Resume (PDF)
+          <i data-lucide="download"></i> <span>Download Resume (PDF)</span>
+        </a>
+        <a href="contact.html" class="contact-btn">
+          <i data-lucide="message-square"></i> <span>Get in Touch</span>
         </a>
       </div>
-
-
     </div>
   </section>
 
@@ -236,6 +228,39 @@
     </div>
   </section>
 
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-info">
+          <p>&copy; 2025 Professor. Aditya Katkar. All rights reserved.</p>
+          <p class="footer-subtitle">Computer Science Department | Pimpri Chinchwad University</p>
+        </div>
+        <div class="footer-social">
+          <a href="https://scholar.google.co.in/citations?view_op=list_works&hl=en&user=md88NjUAAAAJ&gmla" class="social-link" target="_blank">
+            <i class="fas fa-graduation-cap"></i>
+          </a>
+          <a href="https://orcid.org/0009-0000-3031-9651" class="social-link" target="_blank">
+            <i class="fas fa-id-card"></i>
+          </a>
+          <a href="https://vidwan.inflibnet.ac.in/profile/536650" class="social-link" target="_blank">
+            <i class="fas fa-university"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/aditya-katkar-11470018/" class="social-link" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:adityakatkar@gmail.com" class="social-link">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <!-- Developer Icon -->
+          <a href="/pages/developer.html" class="social-link" title="Developer">
+            <i class="fas fa-user-astronaut"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <script>
     lucide.createIcons();
